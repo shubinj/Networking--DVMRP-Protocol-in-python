@@ -1,0 +1,25 @@
+Author: Shubin Jacob
+
+
+
+1/ to clear previous run files:
+
+	sh clear.sh
+
+      NOTE- This will delete ALL .txt files.
+
+
+2/ to invoke router,host,controller:
+
+	python host.py 0 0 sender 40 5 &
+
+	python host.py 1 2 receiver &
+
+	python router.py 0 0 1 &
+
+	python router.py 1 1 2 &
+
+	python controller.py host 0 1 router 0 1 lan 0 1 2&
+
+
+
